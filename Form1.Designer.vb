@@ -32,7 +32,7 @@ Partial Class Form1
         Me.btnCC = New System.Windows.Forms.Button()
         Me.btnCCC = New System.Windows.Forms.Button()
         Me.btnNewGame = New System.Windows.Forms.Button()
-        Me.btnClearAll = New System.Windows.Forms.Button()
+        Me.btnQuitGame = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnA
@@ -116,21 +116,21 @@ Partial Class Form1
         Me.btnNewGame.Text = "New Game"
         Me.btnNewGame.UseVisualStyleBackColor = True
         '
-        'btnClearAll
+        'btnQuitGame
         '
-        Me.btnClearAll.Location = New System.Drawing.Point(202, 293)
-        Me.btnClearAll.Name = "btnClearAll"
-        Me.btnClearAll.Size = New System.Drawing.Size(94, 29)
-        Me.btnClearAll.TabIndex = 1
-        Me.btnClearAll.Text = "Clear All"
-        Me.btnClearAll.UseVisualStyleBackColor = True
+        Me.btnQuitGame.Location = New System.Drawing.Point(202, 293)
+        Me.btnQuitGame.Name = "btnQuitGame"
+        Me.btnQuitGame.Size = New System.Drawing.Size(94, 29)
+        Me.btnQuitGame.TabIndex = 1
+        Me.btnQuitGame.Text = "Quit Game"
+        Me.btnQuitGame.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(357, 344)
-        Me.Controls.Add(Me.btnClearAll)
+        Me.Controls.Add(Me.btnQuitGame)
         Me.Controls.Add(Me.btnNewGame)
         Me.Controls.Add(Me.btnCCC)
         Me.Controls.Add(Me.btnBBB)
@@ -157,5 +157,5 @@ Partial Class Form1
     Friend WithEvents btnCC As Button
     Friend WithEvents btnCCC As Button
     Friend WithEvents btnNewGame As Button
-    Friend WithEvents btnClearAll As Button
+    Friend WithEvents btnQuitGame As Button
 End Class

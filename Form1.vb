@@ -210,4 +210,12 @@ And btnCCC.Enabled = False Then MsgBox("No Winner")
 
 
     End Sub
+
+    Private Sub btnQuitGame_Click(sender As Object, e As EventArgs) Handles btnQuitGame.Click
+        Dim Quit As DialogResult = MessageBox.Show("Do you wish to quit the game?", "MyTictactoe", MessageBoxButtons.YesNo)
+
+        If Quit = vbYes Then
+            Application.Exit()
+        End If
+    End Sub
 End Class
