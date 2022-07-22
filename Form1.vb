@@ -1,6 +1,5 @@
 ﻿Public Class Form1
     Dim turn As Char = "X"
-
     Private Sub btnA_Click(sender As Object, e As EventArgs) Handles btnA.Click
         If turn = "X" Then
             btnA.Text = "X"
@@ -191,6 +190,7 @@
             lblOscore.Text += 1
         End If
     End Sub
+
     Private Sub NoWinner()
         If btnA.Enabled = False And btnAA.Enabled = False And btnAAA.Enabled = False And btnB.Enabled = False _
 And btnBB.Enabled = False And btnBBB.Enabled = False And btnC.Enabled = False And btnCC.Enabled = False _

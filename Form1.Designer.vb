@@ -114,64 +114,76 @@ Partial Class Form1
         '
         'btnNewGame
         '
-        Me.btnNewGame.Location = New System.Drawing.Point(45, 293)
+        Me.btnNewGame.BackColor = System.Drawing.Color.LightPink
+        Me.btnNewGame.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnNewGame.Location = New System.Drawing.Point(23, 293)
         Me.btnNewGame.Name = "btnNewGame"
         Me.btnNewGame.Size = New System.Drawing.Size(94, 29)
         Me.btnNewGame.TabIndex = 1
         Me.btnNewGame.Text = "New Game"
-        Me.btnNewGame.UseVisualStyleBackColor = True
+        Me.btnNewGame.UseVisualStyleBackColor = False
         '
         'btnQuitGame
         '
-        Me.btnQuitGame.Location = New System.Drawing.Point(202, 293)
+        Me.btnQuitGame.BackColor = System.Drawing.Color.LightPink
+        Me.btnQuitGame.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnQuitGame.Location = New System.Drawing.Point(223, 293)
         Me.btnQuitGame.Name = "btnQuitGame"
         Me.btnQuitGame.Size = New System.Drawing.Size(94, 29)
         Me.btnQuitGame.TabIndex = 1
         Me.btnQuitGame.Text = "Quit Game"
-        Me.btnQuitGame.UseVisualStyleBackColor = True
+        Me.btnQuitGame.UseVisualStyleBackColor = False
         '
         'lblX
         '
         Me.lblX.AutoSize = True
-        Me.lblX.Location = New System.Drawing.Point(45, 388)
+        Me.lblX.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblX.Location = New System.Drawing.Point(45, 376)
         Me.lblX.Name = "lblX"
-        Me.lblX.Size = New System.Drawing.Size(21, 20)
+        Me.lblX.Size = New System.Drawing.Size(30, 28)
         Me.lblX.TabIndex = 2
         Me.lblX.Text = "X:"
         '
         'lblO
         '
         Me.lblO.AutoSize = True
-        Me.lblO.Location = New System.Drawing.Point(202, 388)
+        Me.lblO.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblO.Location = New System.Drawing.Point(212, 376)
         Me.lblO.Name = "lblO"
-        Me.lblO.Size = New System.Drawing.Size(23, 20)
+        Me.lblO.Size = New System.Drawing.Size(32, 28)
         Me.lblO.TabIndex = 2
         Me.lblO.Text = "O:"
         '
         'lblXscore
         '
         Me.lblXscore.AutoSize = True
-        Me.lblXscore.Location = New System.Drawing.Point(86, 388)
+        Me.lblXscore.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblXscore.ForeColor = System.Drawing.Color.Red
+        Me.lblXscore.Location = New System.Drawing.Point(86, 376)
         Me.lblXscore.Name = "lblXscore"
-        Me.lblXscore.Size = New System.Drawing.Size(17, 20)
+        Me.lblXscore.Size = New System.Drawing.Size(23, 28)
         Me.lblXscore.TabIndex = 2
         Me.lblXscore.Text = "0"
         '
         'lblOscore
         '
         Me.lblOscore.AutoSize = True
-        Me.lblOscore.Location = New System.Drawing.Point(255, 388)
+        Me.lblOscore.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblOscore.ForeColor = System.Drawing.Color.Red
+        Me.lblOscore.Location = New System.Drawing.Point(265, 376)
         Me.lblOscore.Name = "lblOscore"
-        Me.lblOscore.Size = New System.Drawing.Size(17, 20)
+        Me.lblOscore.Size = New System.Drawing.Size(23, 28)
         Me.lblOscore.TabIndex = 2
         Me.lblOscore.Text = "0"
         '
         'lblGameScore
         '
         Me.lblGameScore.AutoSize = True
-        Me.lblGameScore.Location = New System.Drawing.Point(123, 341)
+        Me.lblGameScore.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblGameScore.ForeColor = System.Drawing.Color.Black
+        Me.lblGameScore.Location = New System.Drawing.Point(95, 336)
         Me.lblGameScore.Name = "lblGameScore"
-        Me.lblGameScore.Size = New System.Drawing.Size(89, 20)
+        Me.lblGameScore.Size = New System.Drawing.Size(140, 31)
         Me.lblGameScore.TabIndex = 2
         Me.lblGameScore.Text = "Game Score"
         '
@@ -179,7 +191,8 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(361, 439)
+        Me.BackColor = System.Drawing.Color.Thistle
+        Me.ClientSize = New System.Drawing.Size(341, 439)
         Me.Controls.Add(Me.lblOscore)
         Me.Controls.Add(Me.lblO)
         Me.Controls.Add(Me.lblGameScore)
