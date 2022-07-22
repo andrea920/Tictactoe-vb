@@ -31,8 +31,8 @@ Partial Class Form1
         Me.btnC = New System.Windows.Forms.Button()
         Me.btnCC = New System.Windows.Forms.Button()
         Me.btnCCC = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnNewGame = New System.Windows.Forms.Button()
+        Me.btnClearAll = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnA
@@ -107,31 +107,31 @@ Partial Class Form1
         Me.btnCCC.TabIndex = 0
         Me.btnCCC.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnNewGame
         '
-        Me.Button1.Location = New System.Drawing.Point(45, 293)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "New Game"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnNewGame.Location = New System.Drawing.Point(45, 293)
+        Me.btnNewGame.Name = "btnNewGame"
+        Me.btnNewGame.Size = New System.Drawing.Size(94, 29)
+        Me.btnNewGame.TabIndex = 1
+        Me.btnNewGame.Text = "New Game"
+        Me.btnNewGame.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnClearAll
         '
-        Me.Button2.Location = New System.Drawing.Point(202, 293)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(94, 29)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Clear All"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnClearAll.Location = New System.Drawing.Point(202, 293)
+        Me.btnClearAll.Name = "btnClearAll"
+        Me.btnClearAll.Size = New System.Drawing.Size(94, 29)
+        Me.btnClearAll.TabIndex = 1
+        Me.btnClearAll.Text = "Clear All"
+        Me.btnClearAll.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(338, 344)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(478, 344)
+        Me.Controls.Add(Me.btnClearAll)
+        Me.Controls.Add(Me.btnNewGame)
         Me.Controls.Add(Me.btnCCC)
         Me.Controls.Add(Me.btnBBB)
         Me.Controls.Add(Me.btnAAA)
@@ -156,6 +156,6 @@ Partial Class Form1
     Friend WithEvents btnC As Button
     Friend WithEvents btnCC As Button
     Friend WithEvents btnCCC As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnNewGame As Button
+    Friend WithEvents btnClearAll As Button
 End Class
