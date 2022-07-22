@@ -11,6 +11,7 @@
         End If
         btnA.Enabled = False
         Xwins()
+        Owins()
     End Sub
 
     Private Sub btnAA_Click(sender As Object, e As EventArgs) Handles btnAA.Click
@@ -23,6 +24,7 @@
         End If
         btnAA.Enabled = False
         Xwins()
+        Owins()
     End Sub
 
     Private Sub btnAAA_Click(sender As Object, e As EventArgs) Handles btnAAA.Click
@@ -35,6 +37,7 @@
         End If
         btnAAA.Enabled = False
         Xwins()
+        Owins()
     End Sub
 
     Private Sub btnB_Click(sender As Object, e As EventArgs) Handles btnB.Click
@@ -47,6 +50,7 @@
         End If
         btnB.Enabled = False
         Xwins()
+        Owins()
     End Sub
 
     Private Sub btnBB_Click(sender As Object, e As EventArgs) Handles btnBB.Click
@@ -59,6 +63,7 @@
         End If
         btnBB.Enabled = False
         Xwins()
+        Owins()
     End Sub
 
     Private Sub btnBBB_Click(sender As Object, e As EventArgs) Handles btnBBB.Click
@@ -71,6 +76,7 @@
         End If
         btnBBB.Enabled = False
         Xwins()
+        Owins()
     End Sub
 
     Private Sub btnC_Click(sender As Object, e As EventArgs) Handles btnC.Click
@@ -83,6 +89,8 @@
         End If
         btnC.Enabled = False
         Xwins()
+        Owins()
+
     End Sub
 
     Private Sub btnCC_Click(sender As Object, e As EventArgs) Handles btnCC.Click
@@ -95,6 +103,8 @@
         End If
         btnCC.Enabled = False
         Xwins()
+        Owins()
+
     End Sub
 
     Private Sub btnCCC_Click(sender As Object, e As EventArgs) Handles btnCCC.Click
@@ -107,6 +117,7 @@
         End If
         btnCCC.Enabled = False
         Xwins()
+        Owins()
     End Sub
 
 
@@ -123,9 +134,9 @@
         End If
 
         If btnA.Text = "X" And btnB.Text = "X" And btnC.Text = "X" Then
-            MessageBox.Show("Wins")
+            MessageBox.Show("X Wins")
         ElseIf btnAA.Text = "X" And btnBB.Text = "X" And btnCC.Text = "X" Then
-            MessageBox.Show("Wins")
+            MessageBox.Show("X Wins")
         ElseIf btnAAA.Text = "X" And btnBBB.Text = "X" And btnCCC.Text = "X" Then
             MessageBox.Show("X Wins")
         End If
@@ -134,6 +145,33 @@
             MessageBox.Show("X Wins")
         ElseIf btnAAA.Text = "X" And btnBB.Text = "X" And btnC.Text = "X" Then
             MessageBox.Show("X Wins")
+        End If
+    End Sub
+
+    Private Sub Owins()
+        If btnA.Text = "O" And btnAA.Text = "O" And btnAAA.Text = "O" Then
+            MessageBox.Show("O Wins")
+
+        ElseIf btnB.Text = "O" And btnBB.Text = "O" And btnBBB.Text = "O" Then
+            MessageBox.Show("O Wins")
+
+        ElseIf btnC.Text = "O" And btnCC.Text = "O" And btnCCC.Text = "O" Then
+            MessageBox.Show("O Wins")
+
+        End If
+
+        If btnA.Text = "O" And btnB.Text = "O" And btnC.Text = "O" Then
+            MessageBox.Show("O Wins")
+        ElseIf btnAA.Text = "O" And btnBB.Text = "O" And btnCC.Text = "O" Then
+            MessageBox.Show("O Wins")
+        ElseIf btnAAA.Text = "O" And btnBBB.Text = "O" And btnCCC.Text = "O" Then
+            MessageBox.Show("O Wins")
+        End If
+
+        If btnA.Text = "O" And btnBB.Text = "O" And btnCCC.Text = "O" Then
+            MessageBox.Show("O Wins")
+        ElseIf btnAAA.Text = "O" And btnBB.Text = "O" And btnC.Text = "O" Then
+            MessageBox.Show("O Wins")
         End If
     End Sub
 End Class
