@@ -12,6 +12,7 @@
         btnA.Enabled = False
         Xwins()
         Owins()
+        NoWinner()
     End Sub
 
     Private Sub btnAA_Click(sender As Object, e As EventArgs) Handles btnAA.Click
@@ -25,6 +26,7 @@
         btnAA.Enabled = False
         Xwins()
         Owins()
+        NoWinner()
     End Sub
 
     Private Sub btnAAA_Click(sender As Object, e As EventArgs) Handles btnAAA.Click
@@ -38,6 +40,7 @@
         btnAAA.Enabled = False
         Xwins()
         Owins()
+        NoWinner()
     End Sub
 
     Private Sub btnB_Click(sender As Object, e As EventArgs) Handles btnB.Click
@@ -51,6 +54,7 @@
         btnB.Enabled = False
         Xwins()
         Owins()
+        NoWinner()
     End Sub
 
     Private Sub btnBB_Click(sender As Object, e As EventArgs) Handles btnBB.Click
@@ -64,6 +68,7 @@
         btnBB.Enabled = False
         Xwins()
         Owins()
+        NoWinner()
     End Sub
 
     Private Sub btnBBB_Click(sender As Object, e As EventArgs) Handles btnBBB.Click
@@ -77,6 +82,7 @@
         btnBBB.Enabled = False
         Xwins()
         Owins()
+        NoWinner()
     End Sub
 
     Private Sub btnC_Click(sender As Object, e As EventArgs) Handles btnC.Click
@@ -90,7 +96,7 @@
         btnC.Enabled = False
         Xwins()
         Owins()
-
+        NoWinner()
     End Sub
 
     Private Sub btnCC_Click(sender As Object, e As EventArgs) Handles btnCC.Click
@@ -104,7 +110,7 @@
         btnCC.Enabled = False
         Xwins()
         Owins()
-
+        NoWinner()
     End Sub
 
     Private Sub btnCCC_Click(sender As Object, e As EventArgs) Handles btnCCC.Click
@@ -118,6 +124,7 @@
         btnCCC.Enabled = False
         Xwins()
         Owins()
+        NoWinner()
     End Sub
 
 
@@ -173,5 +180,34 @@
         ElseIf btnAAA.Text = "O" And btnBB.Text = "O" And btnC.Text = "O" Then
             MessageBox.Show("O Wins")
         End If
+    End Sub
+    Private Sub NoWinner()
+        If btnA.Enabled = False And btnAA.Enabled = False And btnAAA.Enabled = False And btnB.Enabled = False _
+And btnBB.Enabled = False And btnBBB.Enabled = False And btnC.Enabled = False And btnCC.Enabled = False _
+And btnCCC.Enabled = False Then MsgBox("No Winner")
+    End Sub
+
+    Private Sub btnNewGame_Click(sender As Object, e As EventArgs) Handles btnNewGame.Click
+        btnA.Text = ""
+        btnAA.Text = ""
+        btnAAA.Text = ""
+        btnB.Text = ""
+        btnBB.Text = ""
+        btnBBB.Text = ""
+        btnC.Text = ""
+        btnCC.Text = ""
+        btnCCC.Text = ""
+
+        btnA.Enabled = True
+        btnAA.Enabled = True
+        btnAAA.Enabled = True
+        btnB.Enabled = True
+        btnBB.Enabled = True
+        btnBBB.Enabled = True
+        btnC.Enabled = True
+        btnCC.Enabled = True
+        btnCCC.Enabled = True
+
+
     End Sub
 End Class
