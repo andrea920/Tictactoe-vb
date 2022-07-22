@@ -33,6 +33,11 @@ Partial Class Form1
         Me.btnCCC = New System.Windows.Forms.Button()
         Me.btnNewGame = New System.Windows.Forms.Button()
         Me.btnQuitGame = New System.Windows.Forms.Button()
+        Me.lblX = New System.Windows.Forms.Label()
+        Me.lblO = New System.Windows.Forms.Label()
+        Me.lblXscore = New System.Windows.Forms.Label()
+        Me.lblOscore = New System.Windows.Forms.Label()
+        Me.lblGameScore = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnA
@@ -125,11 +130,61 @@ Partial Class Form1
         Me.btnQuitGame.Text = "Quit Game"
         Me.btnQuitGame.UseVisualStyleBackColor = True
         '
+        'lblX
+        '
+        Me.lblX.AutoSize = True
+        Me.lblX.Location = New System.Drawing.Point(45, 388)
+        Me.lblX.Name = "lblX"
+        Me.lblX.Size = New System.Drawing.Size(21, 20)
+        Me.lblX.TabIndex = 2
+        Me.lblX.Text = "X:"
+        '
+        'lblO
+        '
+        Me.lblO.AutoSize = True
+        Me.lblO.Location = New System.Drawing.Point(202, 388)
+        Me.lblO.Name = "lblO"
+        Me.lblO.Size = New System.Drawing.Size(23, 20)
+        Me.lblO.TabIndex = 2
+        Me.lblO.Text = "O:"
+        '
+        'lblXscore
+        '
+        Me.lblXscore.AutoSize = True
+        Me.lblXscore.Location = New System.Drawing.Point(86, 388)
+        Me.lblXscore.Name = "lblXscore"
+        Me.lblXscore.Size = New System.Drawing.Size(17, 20)
+        Me.lblXscore.TabIndex = 2
+        Me.lblXscore.Text = "0"
+        '
+        'lblOscore
+        '
+        Me.lblOscore.AutoSize = True
+        Me.lblOscore.Location = New System.Drawing.Point(255, 388)
+        Me.lblOscore.Name = "lblOscore"
+        Me.lblOscore.Size = New System.Drawing.Size(17, 20)
+        Me.lblOscore.TabIndex = 2
+        Me.lblOscore.Text = "0"
+        '
+        'lblGameScore
+        '
+        Me.lblGameScore.AutoSize = True
+        Me.lblGameScore.Location = New System.Drawing.Point(123, 341)
+        Me.lblGameScore.Name = "lblGameScore"
+        Me.lblGameScore.Size = New System.Drawing.Size(89, 20)
+        Me.lblGameScore.TabIndex = 2
+        Me.lblGameScore.Text = "Game Score"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(357, 344)
+        Me.ClientSize = New System.Drawing.Size(361, 439)
+        Me.Controls.Add(Me.lblOscore)
+        Me.Controls.Add(Me.lblO)
+        Me.Controls.Add(Me.lblGameScore)
+        Me.Controls.Add(Me.lblXscore)
+        Me.Controls.Add(Me.lblX)
         Me.Controls.Add(Me.btnQuitGame)
         Me.Controls.Add(Me.btnNewGame)
         Me.Controls.Add(Me.btnCCC)
@@ -144,6 +199,7 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "My TicTacToe"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -158,4 +214,9 @@ Partial Class Form1
     Friend WithEvents btnCCC As Button
     Friend WithEvents btnNewGame As Button
     Friend WithEvents btnQuitGame As Button
+    Friend WithEvents lblX As Label
+    Friend WithEvents lblO As Label
+    Friend WithEvents lblXscore As Label
+    Friend WithEvents lblOscore As Label
+    Friend WithEvents lblGameScore As Label
 End Class

@@ -131,27 +131,32 @@
     Private Sub Xwins()
         If btnA.Text = "X" And btnAA.Text = "X" And btnAAA.Text = "X" Then
             MessageBox.Show("X Wins")
-
+            lblXscore.Text += 1
         ElseIf btnB.Text = "X" And btnBB.Text = "X" And btnBBB.Text = "X" Then
             MessageBox.Show("X Wins")
-
+            lblXscore.Text += 1
         ElseIf btnC.Text = "X" And btnCC.Text = "X" And btnCCC.Text = "X" Then
             MessageBox.Show("X Wins")
-
+            lblXscore.Text += 1
         End If
 
         If btnA.Text = "X" And btnB.Text = "X" And btnC.Text = "X" Then
             MessageBox.Show("X Wins")
+            lblXscore.Text += 1
         ElseIf btnAA.Text = "X" And btnBB.Text = "X" And btnCC.Text = "X" Then
             MessageBox.Show("X Wins")
+            lblXscore.Text += 1
         ElseIf btnAAA.Text = "X" And btnBBB.Text = "X" And btnCCC.Text = "X" Then
             MessageBox.Show("X Wins")
+            lblXscore.Text += 1
         End If
 
         If btnA.Text = "X" And btnBB.Text = "X" And btnCCC.Text = "X" Then
             MessageBox.Show("X Wins")
+            lblXscore.Text += 1
         ElseIf btnAAA.Text = "X" And btnBB.Text = "X" And btnC.Text = "X" Then
             MessageBox.Show("X Wins")
+            lblXscore.Text += 1
         End If
     End Sub
 
