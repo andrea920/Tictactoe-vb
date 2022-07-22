@@ -10,6 +10,7 @@
             turn = "X"
         End If
         btnA.Enabled = False
+        Xwins()
     End Sub
 
     Private Sub btnAA_Click(sender As Object, e As EventArgs) Handles btnAA.Click
@@ -21,6 +22,7 @@
             turn = "X"
         End If
         btnAA.Enabled = False
+        Xwins()
     End Sub
 
     Private Sub btnAAA_Click(sender As Object, e As EventArgs) Handles btnAAA.Click
@@ -32,6 +34,7 @@
             turn = "X"
         End If
         btnAAA.Enabled = False
+        Xwins()
     End Sub
 
     Private Sub btnB_Click(sender As Object, e As EventArgs) Handles btnB.Click
@@ -43,6 +46,7 @@
             turn = "X"
         End If
         btnB.Enabled = False
+        Xwins()
     End Sub
 
     Private Sub btnBB_Click(sender As Object, e As EventArgs) Handles btnBB.Click
@@ -54,6 +58,7 @@
             turn = "X"
         End If
         btnBB.Enabled = False
+        Xwins()
     End Sub
 
     Private Sub btnBBB_Click(sender As Object, e As EventArgs) Handles btnBBB.Click
@@ -65,6 +70,7 @@
             turn = "X"
         End If
         btnBBB.Enabled = False
+        Xwins()
     End Sub
 
     Private Sub btnC_Click(sender As Object, e As EventArgs) Handles btnC.Click
@@ -76,6 +82,7 @@
             turn = "X"
         End If
         btnC.Enabled = False
+        Xwins()
     End Sub
 
     Private Sub btnCC_Click(sender As Object, e As EventArgs) Handles btnCC.Click
@@ -87,6 +94,7 @@
             turn = "X"
         End If
         btnCC.Enabled = False
+        Xwins()
     End Sub
 
     Private Sub btnCCC_Click(sender As Object, e As EventArgs) Handles btnCCC.Click
@@ -98,5 +106,34 @@
             turn = "X"
         End If
         btnCCC.Enabled = False
+        Xwins()
+    End Sub
+
+
+    Private Sub Xwins()
+        If btnA.Text = "X" And btnAA.Text = "X" And btnAAA.Text = "X" Then
+            MessageBox.Show("X Wins")
+
+        ElseIf btnB.Text = "X" And btnBB.Text = "X" And btnBBB.Text = "X" Then
+            MessageBox.Show("X Wins")
+
+        ElseIf btnC.Text = "X" And btnCC.Text = "X" And btnCCC.Text = "X" Then
+            MessageBox.Show("X Wins")
+
+        End If
+
+        If btnA.Text = "X" And btnB.Text = "X" And btnC.Text = "X" Then
+            MessageBox.Show("Wins")
+        ElseIf btnAA.Text = "X" And btnBB.Text = "X" And btnCC.Text = "X" Then
+            MessageBox.Show("Wins")
+        ElseIf btnAAA.Text = "X" And btnBBB.Text = "X" And btnCCC.Text = "X" Then
+            MessageBox.Show("X Wins")
+        End If
+
+        If btnA.Text = "X" And btnBB.Text = "X" And btnCCC.Text = "X" Then
+            MessageBox.Show("X Wins")
+        ElseIf btnAAA.Text = "X" And btnBB.Text = "X" And btnC.Text = "X" Then
+            MessageBox.Show("X Wins")
+        End If
     End Sub
 End Class
