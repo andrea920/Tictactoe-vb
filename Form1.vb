@@ -163,27 +163,32 @@
     Private Sub Owins()
         If btnA.Text = "O" And btnAA.Text = "O" And btnAAA.Text = "O" Then
             MessageBox.Show("O Wins")
-
+            lblOscore.Text += 1
         ElseIf btnB.Text = "O" And btnBB.Text = "O" And btnBBB.Text = "O" Then
             MessageBox.Show("O Wins")
-
+            lblOscore.Text += 1
         ElseIf btnC.Text = "O" And btnCC.Text = "O" And btnCCC.Text = "O" Then
             MessageBox.Show("O Wins")
-
+            lblOscore.Text += 1
         End If
 
         If btnA.Text = "O" And btnB.Text = "O" And btnC.Text = "O" Then
             MessageBox.Show("O Wins")
+            lblOscore.Text += 1
         ElseIf btnAA.Text = "O" And btnBB.Text = "O" And btnCC.Text = "O" Then
             MessageBox.Show("O Wins")
+            lblOscore.Text += 1
         ElseIf btnAAA.Text = "O" And btnBBB.Text = "O" And btnCCC.Text = "O" Then
             MessageBox.Show("O Wins")
+            lblOscore.Text += 1
         End If
 
         If btnA.Text = "O" And btnBB.Text = "O" And btnCCC.Text = "O" Then
             MessageBox.Show("O Wins")
+            lblOscore.Text += 1
         ElseIf btnAAA.Text = "O" And btnBB.Text = "O" And btnC.Text = "O" Then
             MessageBox.Show("O Wins")
+            lblOscore.Text += 1
         End If
     End Sub
     Private Sub NoWinner()
@@ -212,8 +217,6 @@ And btnCCC.Enabled = False Then MsgBox("No Winner")
         btnC.Enabled = True
         btnCC.Enabled = True
         btnCCC.Enabled = True
-
-
     End Sub
 
     Private Sub btnQuitGame_Click(sender As Object, e As EventArgs) Handles btnQuitGame.Click
